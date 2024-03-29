@@ -21,3 +21,10 @@ html{
 }
 
 
+body {
+  background-color: #343d3f;
+}
+
+.disabled{
+  background:blue;
+}

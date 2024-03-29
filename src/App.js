@@ -1,10 +1,10 @@
 import './App.css';
 import './Assests/fontAwesomeProIcons/fontAwesomeIcons.css';
-
+import HuggingFace from './Components/HuggingFace';
 function App() {
   return (
     <div>
-      Our React App, is up and running!
+     <HuggingFace/>
     </div>
 
   );
