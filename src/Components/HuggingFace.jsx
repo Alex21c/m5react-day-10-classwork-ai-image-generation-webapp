@@ -5,10 +5,10 @@ import SuccessAndErrorMsg from "./SuccessAndErrorMsg";
 import userEvent from "@testing-library/user-event";
 
 
-const HF_TOKEN1 = process.env.REACT_APP_HF_TOKEN1;
-// const HF_TOKEN2 = process.env.REACT_APP_HF_TOKEN2;
+// const HF_TOKEN1 = process.env.REACT_APP_HF_TOKEN1;
+const HF_TOKEN2 = process.env.REACT_APP_HF_TOKEN2;
 
-const inference = new HfInference(HF_TOKEN1);
+const inference = new HfInference(HF_TOKEN2);
 
 
 export default function HuggingFace(){  
@@ -82,6 +82,7 @@ export default function HuggingFace(){
     // return ;
     
     try {
+      updateStateResultImage(null);
       updateStateLabelSubmitButton('AI is Generating Your Image');
       // disable btn
         upateStateIsSubmitBtnDisabled(true);
