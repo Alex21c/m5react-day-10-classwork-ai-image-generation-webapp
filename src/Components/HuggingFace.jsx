@@ -3,10 +3,10 @@ import { HfInference } from "@huggingface/inference";
 import { useEffect } from "react";
 import SuccessAndErrorMsg from "./SuccessAndErrorMsg";
 
-const token1 = process.env.REACT_APP_HF_TOKEN1;
-const token2 = process.env.REACT_APP_HF_TOKEN2;
+const HF_TOKEN1 = process.env.REACT_APP_HF_TOKEN1;
+// const HF_TOKEN2 = process.env.REACT_APP_HF_TOKEN2;
 
-const inference = new HfInference(HF_TOKEN2);
+const inference = new HfInference(HF_TOKEN1);
 
 
 export default function HuggingFace(){

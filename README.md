@@ -20,6 +20,18 @@ npm run start
 + [Google Fonts](https://fonts.google.com/)
 + [Font Awesome](https://fontawesome.com/icons/)
 
+## Important 
+You need to create an `.env` file in the root containing Hugging face token.
+Yours .env file should look like this
+```
+REACT_APP_HF_TOKEN1=hf_yoursToken
+```
+### How to get yours token
+Now to get that token, you need to signup to [hugging face](https://huggingface.co/) and inside settings you will get yours token.
+while deploying yours app to [Vercel](https://vercel.com/) you need to specify these Enviornmnet variables inside settings.
+### Why i did this?
+to protect my hugging face account from being blocked by aunthorized activity! 
+
 ## Author
 [Abhishek kumar](https://www.linkedin.com/in/alex21c/), ([Geekster](https://geekster.in/) MERN Stack FS-14 Batch)
 
